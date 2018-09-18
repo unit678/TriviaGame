@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!--<link rel="stylesheet" type="text/css" media="screen" href="assets/images/style.css">-->
+
+  <title>Trivia Game</title>
+</head>
+<body>
+  <!-- start game-->
+  <div id= "startContainer">
+
+  <!--Static game logo for all screens-->
+      <h1 class= "logo">Do You Really Know Your Cars?</h1>
+
+        <button id="start">Start</button>
+  </div>
+
+    <!--during game when it begins in this container-->
+
+  <div id="duringGame">
+
+<!--static game logo-->
+    <h1 class = "logo">Do You Really Know Your Cars?</h1>
+
+  <h3 id = "timer">Time Remaining: <span id = "timerNumber">60 Seconds</span></h3>
+
+
+
+  <!--questions begins here-->
+   <h5>1. Which car dealer makes an i8?</h5>
+<!--BMW-->
+     <input type="radio" name="q1" value="Honda">Honda
+     <input type="radio" name="q1" value="BMW">BMW
+     <input type="radio" name="q1" value="Nissan">Nissan
+     <input type="radio" name="q1" value="Hyundai">Hyundai
+
+
+   <!--The anwser to this question is Corvette-->
+    <h5>2. Which vehicle is the fastest car Chevy makes?</h5>
+
+      <input type="radio" name="q2" value="Civic">Civic
+      <input type="radio" name="q2" value="Corvette">Corvette
+      <input type="radio" name="q2" value="S2000">S2000
+      <input type="radio" name="q2" value="Pilot">Pilot
+
+
+    <!--The answer is i3-->
+     <h5>3. Which vehicle is cost the lowest?</h5>
+
+       <input type="radio" name="q3" value="gt3">gt3
+       <input type="radio" name="q3" value="f430">f430
+       <input type="radio" name="q3" value="gt40">gt40
+       <input type="radio" name="q3" value="i3">i3
+
+
+     <!--The answer is S63amg-->
+      <h5>4. Which vehicle cost the most?</h5>
+
+        <input type="radio" name="q4" value="E63amg">E63amg
+        <input type="radio" name="q4" value="C63amg">C63amg
+        <input type="radio" name="q4" value="CLS63amg">CLS63amg
+        <input type="radio" name="q4" value="S63amg">S63amg
+
+
+      <!--The Corvette has the two seater-->
+       <h5>5. Which vehicle has only a two seater?</h5>
+
+         <input type="radio" name="q5" value="Accord">Accord
+         <input type="radio" name="q5" value="RangeRover">Range Rover
+         <input type="radio" name="q5" value="Corvette">Corvette
+         <input type="radio" name="q5" value="Tahoe">Tahoe
+
+        <br>
+
+       <!-- submit button when all the questions has been answered-->
+       <button id="submit">Submit!</button>
+
+  </div>
+
+
+
+
+<!--the end of the game-->
+  <div id = "endGame">
+
+  <!--static game logo again for all the answers-->
+    <h1 class = "logo">Do You Really Know Your Cars?</h1>
+
+    <h4 id = "done">Done for Now!</h4>
+    <br>
+   <!--the number of correct and wrong answeres are listed here-->
+    <p>Correct Answers: <span id="correctAnswers">0</span></p>
+    <p>Incorrect Answers: <span id="wrongAnswers">0</span></p>
+    <p>Unanswered: <span id="unanswered">0</span></p>
+
+
+</div>
+
+
+
+
+<!--link to jquery-->
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+<!--to the javascript file listed here-->
+<script src="assets/javascript/app.js"></script>
+</body>
+</html>
